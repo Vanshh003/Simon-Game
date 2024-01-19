@@ -1,0 +1,158 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+/* .main{ */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+/* }  */
+
+.start-btn{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  top: 44.5%;
+  left: 110%;
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  height: 225px;
+  width: 225px;
+  top: 50%;
+  left: 50%;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: darkred;
+  border-radius: 0 100% 0 0;
+  border-left-width: 0px;
+  margin: -225px -10px 0px 0px;
+}
+
+.green {
+  background-color: rgb(4, 82, 27);
+  border-radius: 100% 0 0 0;
+  margin: -225px 0px 0px -225px;
+}
+
+.blue {
+  background-color: darkblue;
+  border-radius: 0 0 100% 0;
+  margin: -10px 0px 0px 0px;
+  border-left-width: 0px;
+
+}
+
+.yellow {
+  background-color: rgb(122, 122, 9);
+  border-radius: 0 0 0 100%;
+  margin: -10px 0px 0px -225px;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey !important;
+}
+
+#innerCircle{
+  position: absolute;
+  height: 225px;
+  width: 225px;
+  background-color: grey;
+  border: 10px solid black;
+  top: 50%;
+  left: 125px;
+  margin: -125px 0px 0px 0px;
+  border-radius: 50%;
+}
+#power-text{
+  color: #2a2a2a;
+  text-shadow: 0 1px 0 #ffba92;
+}
+.power-btn{
+  position: absolute;
+  top: 70px;
+  left: 75px;
+}
+
+#btn-bg{
+  width: 70px;
+  height: 70px;
+  background: #cdd3c9;
+  border-radius: 41px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+#btn-bg.active{
+  background: #2d3036;
+}
+
+#btn-highlight{
+  width: 35px;
+  height: 70px;
+  background: #eee;
+  margin-left: 35px;
+}
+
+.active #btn-highlight{
+  background: #52555d;
+}
+
+#btn-ring{
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  border: 10px solid #2a2a2a;
+  top: 7.5px;
+  left: 7.5px;
+  border-radius: 31px;
+}
+
+.active #btn-ring{
+  border-color: #31d660; 
+}
+
+#ring-line{
+  width: 10px;
+  height: 35px;
+  margin: -14px auto;
+  background: #2a2a2a;
+  border-radius: 7px;
+  border-right: 3px solid #eee;
+  border-left: 3px solid #cdd3c9;
+}
+
+.active #ring-line{
+  background: #31d660;
+  border-right: 3px solid #52555d;
+  border-left: 3px solid #2d3036;
+}
